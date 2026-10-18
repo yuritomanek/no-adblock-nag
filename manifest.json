@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "No Adblock Nag",
+  "version": "0.1.0",
+  "description": "Stops the Raptive / Ad-Shield 'Please allow ads' popup and page wipe.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
